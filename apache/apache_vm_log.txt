@@ -1,0 +1,227 @@
+C:\Users\Talumm-Presidencial\apache
+λ vagrant box add apache C:\precise32.box
+==> box: Box file was not detected as metadata. Adding it directly...
+==> box: Adding box 'apache' (v0) for provider:
+    box: Unpacking necessary files from: file:///C:/precise32.box
+    box: Progress: 100% (Rate: 24.1M/s, Estimated time remaining: --:--:--)
+==> box: Successfully added box 'apache' (v0) for 'virtualbox'!
+
+C:\Users\Talumm-Presidencial\apache
+λ vagrant init apache
+A `Vagrantfile` has been placed in this directory. You are now
+ready to `vagrant up` your first virtual environment! Please read
+the comments in the Vagrantfile as well as documentation on
+`vagrantup.com` for more information on using Vagrant.
+
+C:\Users\Talumm-Presidencial\apache
+λ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'apache'...
+==> default: Matching MAC address for NAT networking...
+==> default: Setting the name of the VM: apache_default_1505860048992_5818
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 80 (guest) => 8081 (host) (adapter 1)
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection reset. Retrying...
+    default: Warning: Connection aborted. Retrying...
+    default:
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default:
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default:
+    default: Guest Additions Version: 4.2.0
+    default: VirtualBox Version: 5.1
+==> default: Mounting shared folders...
+    default: /vagrant => C:/Users/Talumm-Presidencial/apache
+==> default: Running provisioner: shell...
+    default: Running: C:/Users/TALUMM~1/AppData/Local/Temp/vagrant-shell20170919-1952-1a1c5e0.sh
+==> default: Ign http://us.archive.ubuntu.com precise InRelease
+==> default: Get:1 http://us.archive.ubuntu.com precise-updates InRelease [55.7 kB]
+==> default: Get:2 http://security.ubuntu.com precise-security InRelease [55.7 kB]
+==> default: Get:3 http://us.archive.ubuntu.com precise-backports InRelease [55.7 kB]
+==> default: Hit http://us.archive.ubuntu.com precise Release.gpg
+==> default: Get:4 http://us.archive.ubuntu.com precise-updates/main Sources [503 kB]
+==> default: Get:5 http://security.ubuntu.com precise-security/main Sources [150 kB]
+==> default: Get:6 http://security.ubuntu.com precise-security/restricted Sources [4,643 B]
+==> default: Get:7 http://security.ubuntu.com precise-security/universe Sources [57.9 kB]
+==> default: Get:8 http://security.ubuntu.com precise-security/multiverse Sources [3,032 B]
+==> default: Get:9 http://security.ubuntu.com precise-security/main i386 Packages [377 kB]
+==> default: Get:10 http://us.archive.ubuntu.com precise-updates/restricted Sources [8,837 B]
+==> default: Get:11 http://us.archive.ubuntu.com precise-updates/universe Sources [137 kB]
+==> default: Get:12 http://us.archive.ubuntu.com precise-updates/multiverse Sources [10.5 kB]
+==> default: Get:13 http://us.archive.ubuntu.com precise-updates/main i386 Packages [745 kB]
+==> default: Get:14 http://security.ubuntu.com precise-security/restricted i386 Packages [10.8 kB]
+==> default: Get:15 http://security.ubuntu.com precise-security/universe i386 Packages [154 kB]
+==> default: Get:16 http://security.ubuntu.com precise-security/multiverse i386 Packages [3,537 B]
+==> default: Get:17 http://security.ubuntu.com precise-security/main TranslationIndex [208 B]
+==> default: Get:18 http://security.ubuntu.com precise-security/multiverse TranslationIndex [199 B]
+==> default: Get:19 http://security.ubuntu.com precise-security/restricted TranslationIndex [202 B]
+==> default: Get:20 http://security.ubuntu.com precise-security/universe TranslationIndex [205 B]
+==> default: Get:21 http://security.ubuntu.com precise-security/main Translation-en [188 kB]
+==> default: Get:22 http://security.ubuntu.com precise-security/multiverse Translation-en [1,993 B]
+==> default: Get:23 http://security.ubuntu.com precise-security/restricted Translation-en [2,802 B]
+==> default: Get:24 http://security.ubuntu.com precise-security/universe Translation-en [93.2 kB]
+==> default: Get:25 http://us.archive.ubuntu.com precise-updates/restricted i386 Packages [15.3 kB]
+==> default: Get:26 http://us.archive.ubuntu.com precise-updates/universe i386 Packages [297 kB]
+==> default: Get:27 http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages [17.3 kB]
+==> default: Get:28 http://us.archive.ubuntu.com precise-updates/main TranslationIndex [208 B]
+==> default: Get:29 http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex [202 B]
+==> default: Get:30 http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex [202 B]
+==> default: Get:31 http://us.archive.ubuntu.com precise-updates/universe TranslationIndex [205 B]
+==> default: Hit http://us.archive.ubuntu.com precise Release
+==> default: Get:32 http://us.archive.ubuntu.com precise-backports/main Sources [5,889 B]
+==> default: Get:33 http://us.archive.ubuntu.com precise-backports/restricted Sources [28 B]
+==> default: Get:34 http://us.archive.ubuntu.com precise-backports/universe Sources [44.2 kB]
+==> default: Get:35 http://us.archive.ubuntu.com precise-backports/multiverse Sources [5,742 B]
+==> default: Get:36 http://us.archive.ubuntu.com precise-backports/main i386 Packages [6,470 B]
+==> default: Get:37 http://us.archive.ubuntu.com precise-backports/restricted i386 Packages [28 B]
+==> default: Get:38 http://us.archive.ubuntu.com precise-backports/universe i386 Packages [46.0 kB]
+==> default: Get:39 http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages [5,418 B]
+==> default: Get:40 http://us.archive.ubuntu.com precise-backports/main TranslationIndex [202 B]
+==> default: Get:41 http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex [202 B]
+==> default: Get:42 http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex [193 B]
+==> default: Get:43 http://us.archive.ubuntu.com precise-backports/universe TranslationIndex [205 B]
+==> default: Get:44 http://us.archive.ubuntu.com precise-updates/main Translation-en [344 kB]
+==> default: Get:45 http://us.archive.ubuntu.com precise-updates/multiverse Translation-en [10.1 kB]
+==> default: Get:46 http://us.archive.ubuntu.com precise-updates/restricted Translation-en [3,686 B]
+==> default: Get:47 http://us.archive.ubuntu.com precise-updates/universe Translation-en [174 kB]
+==> default: Hit http://us.archive.ubuntu.com precise/main Sources
+==> default: Hit http://us.archive.ubuntu.com precise/restricted Sources
+==> default: Hit http://us.archive.ubuntu.com precise/universe Sources
+==> default: Hit http://us.archive.ubuntu.com precise/multiverse Sources
+==> default: Hit http://us.archive.ubuntu.com precise/main i386 Packages
+==> default: Hit http://us.archive.ubuntu.com precise/restricted i386 Packages
+==> default: Hit http://us.archive.ubuntu.com precise/universe i386 Packages
+==> default: Hit http://us.archive.ubuntu.com precise/multiverse i386 Packages
+==> default: Hit http://us.archive.ubuntu.com precise/main TranslationIndex
+==> default: Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+==> default: Hit http://us.archive.ubuntu.com precise/restricted TranslationIndex
+==> default: Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
+==> default: Get:48 http://us.archive.ubuntu.com precise-backports/main Translation-en [5,737 B]
+==> default: Get:49 http://us.archive.ubuntu.com precise-backports/multiverse Translation-en [4,852 B]
+==> default: Get:50 http://us.archive.ubuntu.com precise-backports/restricted Translation-en [28 B]
+==> default: Get:51 http://us.archive.ubuntu.com precise-backports/universe Translation-en [35.9 kB]
+==> default: Hit http://us.archive.ubuntu.com precise/main Translation-en
+==> default: Hit http://us.archive.ubuntu.com precise/multiverse Translation-en
+==> default: Hit http://us.archive.ubuntu.com precise/restricted Translation-en
+==> default: Hit http://us.archive.ubuntu.com precise/universe Translation-en
+==> default: Fetched 3,643 kB in 9s (393 kB/s)
+==> default: Reading package lists...
+==> default: Reading package lists...
+==> default: Building dependency tree...
+==> default: Reading state information...
+==> default: The following extra packages will be installed:
+==> default:   apache2-mpm-worker apache2-utils apache2.2-bin apache2.2-common libapr1
+==> default:   libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap ssl-cert
+==> default: Suggested packages:
+==> default:   www-browser apache2-doc apache2-suexec apache2-suexec-custom
+==> default:   openssl-blacklist
+==> default: The following NEW packages will be installed:
+==> default:   apache2 apache2-mpm-worker apache2-utils apache2.2-bin apache2.2-common
+==> default:   libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap ssl-cert
+==> default: 0 upgraded, 10 newly installed, 0 to remove and 192 not upgraded.
+==> default: Need to get 1,844 kB of archives.
+==> default: After this operation, 5,321 kB of additional disk space will be used.
+==> default: Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main libapr1 i386 1.4.6-1 [91.3 kB]
+==> default: Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/main libaprutil1 i386 1.3.12+dfsg-3 [75.4 kB]
+==> default: Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/main libaprutil1-dbd-sqlite3 i386 1.3.12+dfsg-3 [10.2 kB]
+==> default: Get:4 http://us.archive.ubuntu.com/ubuntu/ precise/main libaprutil1-ldap i386 1.3.12+dfsg-3 [7,962 B]
+==> default: Get:5 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main apache2.2-bin i386 2.2.22-1ubuntu1.11 [1,328 kB]
+==> default: Get:6 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main apache2-utils i386 2.2.22-1ubuntu1.11 [89.2 kB]
+==> default: Get:7 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main apache2.2-common i386 2.2.22-1ubuntu1.11 [225 kB]
+==> default: Get:8 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main apache2-mpm-worker i386 2.2.22-1ubuntu1.11 [2,290 B]
+==> default: Get:9 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main apache2 i386 2.2.22-1ubuntu1.11 [1,498 B]
+==> default: Get:10 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main ssl-cert all 1.0.28ubuntu0.1 [12.3 kB]
+==> default: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+==> default: Fetched 1,844 kB in 3s (469 kB/s)
+==> default: Selecting previously unselected package libapr1.
+==> default: (Reading database ...
+==> default: 29361 files and directories currently installed.)
+==> default: Unpacking libapr1 (from .../libapr1_1.4.6-1_i386.deb) ...
+==> default: Selecting previously unselected package libaprutil1.
+==> default: Unpacking libaprutil1 (from .../libaprutil1_1.3.12+dfsg-3_i386.deb) ...
+==> default: Selecting previously unselected package libaprutil1-dbd-sqlite3.
+==> default: Unpacking libaprutil1-dbd-sqlite3 (from .../libaprutil1-dbd-sqlite3_1.3.12+dfsg-3_i386.deb) ...
+==> default: Selecting previously unselected package libaprutil1-ldap.
+==> default: Unpacking libaprutil1-ldap (from .../libaprutil1-ldap_1.3.12+dfsg-3_i386.deb) ...
+==> default: Selecting previously unselected package apache2.2-bin.
+==> default: Unpacking apache2.2-bin (from .../apache2.2-bin_2.2.22-1ubuntu1.11_i386.deb) ...
+==> default: Selecting previously unselected package apache2-utils.
+==> default: Unpacking apache2-utils (from .../apache2-utils_2.2.22-1ubuntu1.11_i386.deb) ...
+==> default: Selecting previously unselected package apache2.2-common.
+==> default: Unpacking apache2.2-common (from .../apache2.2-common_2.2.22-1ubuntu1.11_i386.deb) ...
+==> default: Selecting previously unselected package apache2-mpm-worker.
+==> default: Unpacking apache2-mpm-worker (from .../apache2-mpm-worker_2.2.22-1ubuntu1.11_i386.deb) ...
+==> default: Selecting previously unselected package apache2.
+==> default: Unpacking apache2 (from .../apache2_2.2.22-1ubuntu1.11_i386.deb) ...
+==> default: Selecting previously unselected package ssl-cert.
+==> default: Unpacking ssl-cert (from .../ssl-cert_1.0.28ubuntu0.1_all.deb) ...
+==> default: Processing triggers for man-db ...
+==> default: Processing triggers for ureadahead ...
+==> default: ureadahead will be reprofiled on next reboot
+==> default: Processing triggers for ufw ...
+==> default: Setting up libapr1 (1.4.6-1) ...
+==> default: Setting up libaprutil1 (1.3.12+dfsg-3) ...
+==> default: Setting up libaprutil1-dbd-sqlite3 (1.3.12+dfsg-3) ...
+==> default: Setting up libaprutil1-ldap (1.3.12+dfsg-3) ...
+==> default: Setting up apache2.2-bin (2.2.22-1ubuntu1.11) ...
+==> default: Setting up apache2-utils (2.2.22-1ubuntu1.11) ...
+==> default: Setting up apache2.2-common (2.2.22-1ubuntu1.11) ...
+==> default: Enabling site default.
+==> default: Enabling module alias.
+==> default: Enabling module autoindex.
+==> default: Enabling module dir.
+==> default: Enabling module env.
+==> default: Enabling module mime.
+==> default: Enabling module negotiation.
+==> default: Enabling module setenvif.
+==> default: Enabling module status.
+==> default: Enabling module auth_basic.
+==> default: Enabling module deflate.
+==> default: Enabling module authz_default.
+==> default: Enabling module authz_user.
+==> default: Enabling module authz_groupfile.
+==> default: Enabling module authn_file.
+==> default: Enabling module authz_host.
+==> default: Enabling module reqtimeout.
+==> default: Setting up apache2-mpm-worker (2.2.22-1ubuntu1.11) ...
+==> default:  * Starting web server apache2
+==> default: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1 for ServerName
+==> default:    ...done.
+==> default: Setting up apache2 (2.2.22-1ubuntu1.11) ...
+==> default: Setting up ssl-cert (1.0.28ubuntu0.1) ...
+==> default: Processing triggers for libc-bin ...
+==> default: ldconfig deferred processing now taking place
+==> default:  * Restarting web server apache2
+==> default: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1 for ServerName
+==> default:  ... waiting
+==> default: .
+==> default: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1 for ServerName
+==> default:    ...done.
+==> default: ServerName localhost
+==> default:  * Restarting web server apache2
+==> default:  ... waiting
+==> default: .
+==> default:    ...done.
+
+C:\Users\Talumm-Presidencial\apache
+λ
